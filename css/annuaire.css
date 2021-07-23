@@ -1,0 +1,376 @@
+*, ::before, ::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/******************************* links on top *******************************/
+.ul-list
+{
+    display: flex; 
+    justify-content: space-evenly;
+    background-color: #5D4954;
+    position: fixed;    
+}
+li
+{
+    list-style-type: none;
+}
+
+.ul-list li a
+{
+    font-family: Poppins;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s linear;
+}
+
+
+
+/************************ logo ***************************/
+img
+{
+    max-width: 12%;
+    display: block;
+    padding-top: 1.5rem; 
+    margin: auto;
+}
+
+
+h3, h4
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+
+p
+{
+    font-family: 'Poppins';
+}
+
+
+/****************************** styling the search and button parts ***********************************/
+
+.fa
+{
+    color: #31885e;
+}
+
+.search
+{
+    width: 55%;
+    margin: 2rem auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search input
+{
+    border: 0;
+    background: transparent;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(189, 186, 186, 0.582);
+    text-align: center;
+}
+
+.search input:focus
+{
+    outline: none !important;
+    border: 0;
+    box-shadow: 0 0 10px transparent;
+    border-bottom: 1px solid rgba(189, 186, 186, 0.582);
+}
+
+
+
+.suggestions > div
+{
+    padding: 15px;
+    font-size: 20px;
+    font-family: Poppins;
+    border-top: 1px solid rgba(189, 186, 186, 0.582);
+    transition: 0.2s linear;
+    cursor: pointer;
+    font-family: Poppins;
+    letter-spacing: 2px;
+ }
+
+
+.suggestions > div:hover
+{
+    background-color: rgba(207, 204, 204, 0.363);
+}
+
+
+
+/*.btn-search
+{
+    width: 180px;
+    display: block; 
+    margin: 1rem auto;
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: #548d50;
+    padding: 0.3rem;
+    border: 1px solid #548d50;
+    border-radius: 3px;
+    outline: none;
+    background: none;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.2s linear;
+}
+.btn-search:hover
+{
+    background-color: #548d50;
+    color: whitesmoke;
+
+}*/
+
+
+/******************************* setup the grid *******************************/
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 80%;
+    height: auto;
+    max-width: 1300px;
+    margin: 7rem auto;
+    grid-gap: 5px;
+    animation: fade 0.4s ease-in;
+}
+
+
+
+.grid-container button
+{
+    color: whitesmoke;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    outline: none;
+    padding: 1.5rem;
+    text-transform: capitalize;
+    background: none;
+    border-radius: 3px;
+    transition: 0.2s linear;
+    letter-spacing: 3px;
+}
+
+
+/* colors of background of the button */
+.grid-container .femme
+{
+    background-color: #bd3730e0;
+    border: 1px solid #bd3730e0; 
+}
+
+.grid-container .enfant
+{
+    background-color: rgba(196, 93, 56, 0.849);
+    border: 1px solid rgba(196, 93, 56, 0.849);
+}
+
+.grid-container .homme
+{
+    background-color: #0063ccdc;
+    border: 1px solid #0063ccdc;   
+}
+
+.grid-container .parfums-accessoires
+{
+    background-color: #a346a7d3;
+    border: 1px solid #a346a7d3;
+}
+
+
+.grid-container .chaussures-collants
+{
+    background-color: rgba(147, 112, 216, 0.911);
+    border: 1px solid rgba(147, 112, 216, 0.911);
+}
+
+.grid-container .maison
+{
+    background-color: rgba(22, 32, 32, 0.795);
+    border: 1px solid rgba(22, 32, 32, 0.795);
+}
+
+.grid-container .bagages
+{
+    background-color: rgba(128, 128, 0, 0.801);
+    border: 1px solid rgba(128, 128, 0, 0.801);
+}
+
+
+.grid-container .services
+{
+    background-color: #3a7e35d8;
+    border: 1px solid #3a7e35d8; 
+}
+
+
+.grid-container .personnel
+{
+    background-color: #2f7a8bd7;
+    border: 1px solid #2f7a8bd7; 
+}
+
+
+.grid-container .femme:hover
+{
+    background: none;
+    color: #bd3730e0; 
+}
+
+.grid-container .enfant:hover
+{
+    background: none;
+    color: rgba(196, 93, 56, 0.849); 
+}
+
+.grid-container .homme:hover
+{
+    background: none;
+    color: #0063ccdc;   
+}
+
+.grid-container .parfums-accessoires:hover
+{
+    background: none;
+    color: #a346a7d3;
+}
+
+.grid-container .chaussures-collants:hover
+{
+    background: none;
+    color: rgba(147, 112, 216, 0.911);
+}
+
+.grid-container .maison:hover
+{
+    background: none;
+    color: rgba(22, 32, 32, 0.795);
+}
+
+.grid-container .bagages:hover
+{
+    background: none;
+    color: rgba(128, 128, 0, 0.801);
+}
+
+
+.grid-container .services:hover
+{
+    background: none;
+    color: #3a7e35d8; 
+}
+
+.grid-container .personnel:hover
+{
+    background: none;
+    color: #2f7a8bd7;
+}
+
+
+hr
+{
+    width: 90%;
+    margin: auto;
+    background-color: rgba(207, 204, 204, 0.363);
+}
+
+
+/******************************* styling numbers of printemps infos *******************************/
+.table-infos-printemps
+{
+    text-align: center;
+}
+
+tr, td
+{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    color: rgba(39, 38, 38, 0.87);
+}
+
+.tel
+{
+    font-family: Poppins;
+    color: #444242;
+}
+.tel:hover
+{
+    font-family: Poppins;
+    text-decoration: none;
+}
+
+
+
+
+/************************************ footer ********************************/
+footer
+{
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #0f0e0ee7;
+}
+
+footer a
+{
+   font-family: Poppins;
+   font-size: 13px;
+   text-decoration: none;
+   color: white;
+}
+
+footer a:hover
+{
+   text-decoration: none;
+   color: white;
+}
+
+
+/******************************** animation *********************************/
+@keyframes fade
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+
+/************************* screens of 600px or less *************************/
+@media screen and (max-width: 600px)
+{
+    h3
+    {
+        font-size: 11px;
+    }
+
+    .search input
+    {
+        font-size: 18px;
+    }
+    .ul-list li a
+    {
+        font-size: 15px;
+    }
+}

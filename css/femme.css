@@ -1,0 +1,80 @@
+*, ::before, ::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*********************** styling women infos ***************************/
+
+h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: Poppins;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+a
+{
+    color: rgb(39, 38, 38);
+    font-family: Poppins;
+}
+
+
+a:hover
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.title, .tpv
+{
+    font-weight: 545;
+    font-family: Verdana, Geneva, Tahoma;
+}
+
+
+.table
+{
+    text-align: justify;
+}
+
+tr, td
+{
+    font-family: Poppins;
+    font-size: 1.3rem;
+    color: rgb(39, 38, 38);
+    background-color: #bd373021; 
+}
+
+.telephone
+{
+    
+    background-color: #bd3730c4; 
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+
+.home
+{
+    display: block;
+    width: 100px;
+    margin: auto;
+    color:#bd373063; 
+    transition: 0.3s linear;
+}
+
+ .home .fa
+{
+    font-size: 50px;
+}
+
+.home:hover
+{
+    color:#bd3730e0; 
+}
